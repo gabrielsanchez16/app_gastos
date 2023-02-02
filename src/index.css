@@ -217,7 +217,7 @@ header h1 {
 }
 .contenido-presupuesto p.negativo,
 .contenido-presupuesto p.negativo span {
-    color: red;
+    color: #db2777;
 }
 .contenido-presupuesto span {
     font-weight: 900;
@@ -455,4 +455,9 @@ body .modal {
         transition-timing-function: ease-in;
         opacity: 0;
     }
+}
+
+.filter-contain {
+    justify-content: center;
+    flex-wrap: wrap;
 }

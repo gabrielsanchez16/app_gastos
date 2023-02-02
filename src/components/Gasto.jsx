@@ -13,7 +13,7 @@ import estudio from '../img/icono_estudio.png'
 
 
 
-const Gasto = ({gasto, setGastoEditar}) => {
+const Gasto = ({gasto, setGastoEditar,eliminarGasto}) => {
 
   const diccionarioIconos = {
   ahorro: ahorro,
@@ -44,7 +44,10 @@ const {categoria, nombre, cantidad,fecha, id} = gasto
 
   const trailingActions = ()=> (
     <TrailingActions>
-      <SwipeAction onClick={()=> console.log('Second')}>
+      <SwipeAction 
+      onClick={()=> eliminarGasto(id)}
+      destructive={true}
+      >
         Eliminar
       </SwipeAction>
     </TrailingActions>
